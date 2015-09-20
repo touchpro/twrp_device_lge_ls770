@@ -18,7 +18,7 @@
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
 # Get the prebuilt list of APNs
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/omni/config/cdma.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += \
     device/lge/ls770/kernel:kernel
 
 PRODUCT_NAME := omni_ls770
-PRODUCT_DEVICE := ls770
+PRODUCT_DEVICE := g4stylusc
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LGLS770
 PRODUCT_MANUFACTURER := LGE
